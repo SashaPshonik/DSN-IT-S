@@ -1,0 +1,298 @@
+@import 'vars.sass'
+@import 'fonts.sass'
+
+body
+	margin: 0
+	padding: 0
+	padding-bottom: 200px
+	font-size: 14px
+	font-family: Roboto-Thin, sans-serif
+	background-image: url('../img/backgrounds/home-bg.jpg')
+	background-repeat: no-repeat
+	background-position: top center
+	background-size: auto 546px
+	background-color: #f2f2f2
+
+a
+	text-decoration: none
+
+.icon
+	display: inline-block
+	width: 1em
+	height: 1em
+	stroke-width: 0
+	stroke: currentColor
+	fill: currentColor
+
+.header
+	margin-bottom: 280px
+	padding: 10px 0
+	background-color: #1a5f74
+.logo
+	margin: 0
+	a
+		font-family: Roboto-Thin, sans-serif
+		font-size: 23px
+		line-height: 30px
+		font-weight: 400
+		text-transform: uppercase
+		color: #ffffff
+
+.search
+	width: 100%
+	position: relative
+	&__field
+		width: 100%
+		height: 35px
+		padding: 5px 40px 5px 60px
+		border-radius: 3px
+		border: none
+		&:focus
+			outline: none
+	&__location
+		position: absolute
+		display: flex
+		align-items: center
+		top: 8px
+		left: 8px
+		.icon-location
+			height: 20px
+			width: 20px
+			margin-right: 6px
+			fill: #ff4b39
+		.icon-sort-down
+			width: 7px
+			height: 7px
+			fill: #43494b
+	&__btn
+		position: absolute
+		top: 8px
+		right: 8px
+		border: none
+		background-color: transparent
+		cursor: pointer
+		svg
+			width: 15px
+			height: 15px
+
+.notification
+	position: relative
+	margin-right: 40px
+	.icon-notifications
+		width: 25px
+		height: 25px
+		fill: #282b2c
+	&__count
+		position: absolute
+		width: 12px
+		height: 14px
+		top: -5px
+		right: -5px
+		font-size: 10px
+		text-align: center
+		border-radius: 50%
+		color: #fff
+		background-color: red
+
+.section-heading
+	width: 100%
+	display: flex
+	margin-bottom: 50px
+	&__ico
+		height: 100%
+		margin-left: 50px
+		margin-right: 23px
+		svg
+			width: 32px
+			height: 32px
+			fill: #fff
+	&__title
+		margin: 0
+		margin-bottom: 15px
+		font-family: Roboto-Thin, sans-serif
+		font-size: 40px
+		font-weight: 300
+		line-height: 40px
+		color: #ffffff
+	&__subtitle
+		margin: 0
+		font-family: Roboto-Thin, sans-serif
+		font-size: 14px
+		font-weight: 300
+		line-height: 25.87px
+		color: #ffffff
+
+.article
+	position: relative
+	margin: 0 15px 20px
+	padding: 1px 90px
+	background-color: #fff
+	box-shadow: 0 0 7px 0 rgba(0,0,0,0.2)
+	&__content
+		padding-right: 60px
+		margin-bottom: 96px
+		p
+			margin: 0 0 100px
+			font-family: Roboto-Thin, sans-serif
+			font-size: 14px
+			font-weight: 300
+			line-height: 24px
+			color: #000000
+.article-heading
+	position: relative
+	display: flex
+	margin-top: 70px
+	margin-bottom: 36px
+	align-items: center
+	justify-content: space-between
+	transition: all 0.5s ease
+	&.hidden
+		margin: 40px 0
+		.accordion
+			transform: rotate(180deg)
+	&__ico
+		position: absolute
+		top: 0
+		left: -45px
+		width: 32px
+		height: 32px
+		fill: #303030
+	&__title
+		display: inline-block
+		margin: 0
+		font-family: Roboto-Thin, sans-serif
+		font-size: 24px
+		font-weight: bold
+		line-height: 26.35px
+		color: #000000
+	.accordion
+		position: relative
+		width: 17px
+		height: 17px
+		right: -20px
+		cursor: pointer
+		transition: transform 0.5s ease
+.course-card
+	position: relative
+	padding: 12px
+	background-color: #fff
+	box-shadow: 0 0 7px 0 rgba(0,0,0,0.2)
+	.course-logo
+		position: absolute
+		top: -15px
+		left: 22px
+		padding: 14px 12px
+		background-color: #fff
+		border-radius: 3px
+		box-shadow: 0 0 40px 0 rgba(0,0,0,0.1)
+		z-index: 2
+	&__meta
+		position: relative
+		margin-bottom: 25px
+		img
+			width: 100%
+	&__price
+		display: none
+		position: absolute
+		padding: 7px 11px
+		bottom: 0
+		right: 0
+		opacity: 0.86
+		font-family: Roboto-Thin, sans-serif
+		font-size: 12px
+		font-weight: bold
+		color: #ffffff
+		background-color: rgba(0,0,0,0.52)
+	&__rating
+		margin-bottom: 16px
+		text-align: right
+		svg
+			width: 22px
+			height: 22px
+			fill: #015298
+	&__desc
+		padding: 0 10px
+		font-family: Roboto-Thin, sans-serif
+		font-size: 14px
+		font-weight: 300
+		line-height: 21px
+		opacity: 0.8
+		color: #000000
+.course-heading
+	display: flex
+	margin-bottom: 19px
+	padding: 0 10px
+	&__verification
+		margin-right: 11px
+		svg
+			width: 23px
+			height: 23px
+			fill: #005297
+	&__title
+		margin: 0
+		font-family: Roboto-Thin, sans-serif
+		font-size: 18px
+		font-weight: bold
+		line-height: 24px
+		a
+			color: #000000
+.course-location
+	padding: 18px 8px 0
+	border-top: 1px solid rgba(0, 0, 0, 0.18)
+	&__ico
+		position: relative
+		display: table
+		float: left
+		margin-right: 13px
+		svg
+			width: 20px
+			height: 20px
+			fill: #979797
+	&__country,
+	&__city
+		display: block
+		font-family: Roboto-Thin, sans-serif
+		font-size: 14px
+		font-weight: bold
+		line-height: 23px
+		opacity: 0.7
+		color: #000000
+
+.recommended-courses
+	&__title
+		padding-left: 32px
+		margin-bottom: 20px
+		font-family: Roboto-Thin, sans-serif
+		font-size: 28px
+		font-weight: bold
+		line-height: 30px
+		color: #000000
+.courses-slider
+	position: relative
+	.prew-arrow,
+	.next-arrow
+		position: absolute
+		padding: 10px
+		top: 50%
+		transform: translateY(-50%)
+		background-color: #fff
+		border: none
+		border-radius: 5px
+		cursor: pointer
+		box-shadow: 0 3px 3px 0 rgba(0,0,0,0.11)
+		&:focus
+			outline: none
+	.prew-arrow
+		left: -50px
+	.next-arrow
+		right: -50px
+	.icon
+			width: 20px
+			height: 20px
+			fill: #295878
+	.slick-list
+		padding: 30px 0 10px
+	.course-card
+		margin: 0 10px
+
+@import 'media'

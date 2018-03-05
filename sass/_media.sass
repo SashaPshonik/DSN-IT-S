@@ -1,0 +1,96 @@
+@media only screen and (max-width : 992px)
+	.logo
+		a
+			font-size: 18px
+@media only screen and (max-width : 767px)
+	body
+		background-size: auto 900px
+	.header
+		margin-bottom: 50px
+	.logo
+		a
+			font-size: 23px
+	.notification
+		margin-right: 0
+	.articles
+		.section-heading
+			flex-direction: column
+			margin-top: 80px
+			&__ico
+				margin: 0 0 30px
+				display: block
+				float: none
+				text-align: center
+			&__title
+				font-size: 26px
+				text-align: center
+	.article
+		width: auto
+		padding: 20px 0
+		&-heading
+			display: flex
+			padding: 0 30px
+			flex-direction: column
+			text-align: center
+			&__ico
+				position: relative
+				margin-bottom: 22px
+				left: 0
+			&__title
+				margin-bottom: 20px
+			.accordion
+				right: 0
+		&__content
+			padding: 0 10px
+	.courses-slider
+		.next-arrow,
+		.prew-arrow
+			display: none
+	.course-card_respond
+		padding: 0
+		.course-card
+			&__rating,
+			&__desc
+				display: none
+			&__price
+				display: block
+			&__meta
+				margin-bottom: 10px
+		.course-logo
+			margin: 10px
+			padding: 5px
+			top: 6px
+			left: 6px
+			border-radius: 0
+			box-shadow: none
+			img
+				width: 25px
+				height: 25px
+		.course-heading
+			margin-bottom: 10px
+			padding: 0 10px
+			&__title
+				font-size: 12px
+			&__verification
+				display: none
+		.course-location
+			margin: 0 0 10px
+			padding: 0 10px
+			border-top: none
+			&__country,
+			&__city
+				display: inline-block
+				font-size: 9px
+				opacity: 0.5
+			&__ico
+				margin-right: 5px
+				svg
+					width: 10px
+					height: 10px
+					fill: #989898
+@media only screen and (max-width : 576px)
+
+	.recommended-courses
+		&__title
+			margin-top: 0
+			font-size: 16px
